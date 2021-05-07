@@ -76,13 +76,13 @@ weatherForm.addEventListener('submit', (event) => {
 //heroku keys:add
 
 //For starting to create web application        heroku create gurbuz-weather-application
-
+ 
 //Setting heroku instructions first opent rhe package.json and in scripts change test to the "start":"node src/app.js" then on command window    npm run start
 
 //used git push after setting the commit like we did before
 
 //git remote     will show the remotes that had been figured
 
-//To deploy      git push heroku master    
+//To deploy      git push heroku main  
 
 
