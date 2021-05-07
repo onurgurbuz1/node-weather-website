@@ -1,4 +1,3 @@
-console.log('Client side javascript file is loaded!')
 
 const weatherForm = document.querySelector('form') //Setting format from hbs for addEventListaner
 const searchElement = document.querySelector('input') //Getting the user imput from hbs
@@ -48,3 +47,8 @@ weatherForm.addEventListener('submit', (event) => {
 
 //After downloading Heuroku to se its version     heroku -v      then heroku login
 //In order to initilize git       git init     is used
+//git status will show the statis of library
+
+//git add  isused for adding to the git platform. In order to add everything in directory we use       git add .
+
+// To create new commit we use    git commit -m "Init commit"
