@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (event) => {
     const location = searchElement.value
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
-        fetch('http://localhost:3000/weather?address='+location).then((response) => {
+        fetch('/weather?address='+location).then((response) => {
 
             response.json().then((forecastData)=> {
             
@@ -52,3 +52,31 @@ weatherForm.addEventListener('submit', (event) => {
 //git add  isused for adding to the git platform. In order to add everything in directory we use       git add .
 
 // To create new commit we use    git commit -m "Init commit"
+
+//COMPILING IN GITBASH
+
+//In git bash we used     ls -a -l ~/.ssh    find existing keys
+
+//Used     ssh-keygen -t rsa -b 4096 -C "onurgurbuz97@gmail.com"   for compiling a spesific key random image
+
+
+// eval $(ssh-agent -s)   for compiling agent pid
+// In order to add an id we used    ssh-add ~/.ssh/id_rsa
+
+
+// Back to Command Window MICROSOFT CODE
+
+// Finally run cat ~/.ssh/id_rsa.pub to form get spesific ssh key
+
+//In order to test ssh connection     ssh -T git@github.com
+
+
+//USING HEROKU
+
+//heroku keys:add
+
+//For starting to create web application        heroku create gurbuz-weather-application
+
+//Setting heroku instructions first opent rhe package.json and in scripts change test to the "start":"node src/app.js" then on command window    npm run start
+
+//
