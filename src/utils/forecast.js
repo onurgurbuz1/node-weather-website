@@ -2,7 +2,7 @@ const request = require('request')
 
 const forecast = (latitude,longitude,callback) => {
 
-    const url = 'http://api.weatherstack.com/current?access_key=50b70d7f19f54483699b4e81bbf2f715&query='+latitude+','+longitude+'&units=f'
+    const url = 'http://api.weatherstack.com/current?access_key=50b70d7f19f54483699b4e81bbf2f715&query='+latitude+','+longitude+'&units=m'
 
 
     request({url,json:true},(error, {body}) => { //Instead of writing response and rapidly using response.body we destructured to {body}
