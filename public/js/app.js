@@ -26,12 +26,14 @@ weatherForm.addEventListener('submit', (event) => {
                 }else {
 
                     const {address,location,forecast} = forecastData
-
+                  
                     messageOne.textContent = location
                     messageTwo.textContent = forecast
                     console.log(address)
                     console.log(location)
                     console.log(forecast)
+               
+
                     // console.log(forecastData.current.temperature)
                     // console.log(forecastData.location)
                     
@@ -64,7 +66,7 @@ weatherForm.addEventListener('submit', (event) => {
 // In order to add an id we used    ssh-add ~/.ssh/id_rsa
 
 
-// Back to Command Window MICROSOFT CODE
+// DEFINING SSH KEY TO GITHUB Back to Command Window MICROSOFT CODE
 
 // Finally run cat ~/.ssh/id_rsa.pub to form get spesific ssh key
 

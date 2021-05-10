@@ -7,20 +7,21 @@ const forecast = (latitude,longitude,callback) => {
 
     request({url,json:true},(error, {body}) => { //Instead of writing response and rapidly using response.body we destructured to {body}
 
-        if (error){
+        if (error){8
             callback('Can not connect',undefined)
         }else if(body.error){
             callback('Can not find the address',undefined)
 
         }else{
+            
             const forecast = {
                 description: body.current.weather_descriptions[0],
                 temperature: body.current.temperature,
-                feltTemp: body.current.feelslike
+                feltTemp: body.current.feelslike,
+                windSpeed: body.current.wind_speed
 
             }
-            
-            callback(undefined,forecast.description+'. It is currently '+ forecast.temperature+ ' degrees out. And it feels '+ forecast.feltTemp )
+            callback(undefined,'Cordinates: '+latitude+"," +longitude  +"   "+ forecast.description+'. It is currently '+ forecast.temperature+ ' degrees out. And it feels '+ forecast.feltTemp+". Wind speed: "+forecast.windSpeed)
         }
 
 
